@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Moon, Sun, Menu, X, Phone } from 'lucide-react'
+import { Moon, Sun, Menu, X, Phone, BedDouble } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { COMPANY } from '@/data/company'
 import { cn } from '@/lib/utils'
@@ -25,7 +25,9 @@ export default function Header({ themeMode, onToggleTheme }: HeaderProps) {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 no-underline">
-            <span className="text-2xl">🛏️</span>
+            <div className="w-8 h-8 rounded-lg bg-[var(--color-primary)] flex items-center justify-center shrink-0">
+              <BedDouble size={16} className="text-white" />
+            </div>
             <div className="flex flex-col leading-tight">
               <span className="font-bold text-[var(--color-primary)] text-sm sm:text-base">
                 {COMPANY.shortName}

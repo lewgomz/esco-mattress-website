@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, MapPin, Clock } from 'lucide-react'
+import { Phone, MapPin, Clock, BedDouble } from 'lucide-react'
 import { COMPANY } from '@/data/company'
 
 export default function Footer() {
@@ -7,12 +7,14 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-card)] mt-auto">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-2xl">🛏️</span>
+              <div className="w-7 h-7 rounded-md bg-[var(--color-primary)] flex items-center justify-center shrink-0">
+                <BedDouble size={14} className="text-white" />
+              </div>
               <span className="font-bold text-[var(--color-primary)]">{COMPANY.shortName}</span>
             </div>
             <p className="text-sm text-[var(--color-muted-foreground)] leading-relaxed">
@@ -69,7 +71,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[var(--color-muted-foreground)]">
+        <div className="mt-6 pt-5 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[var(--color-muted-foreground)]">
           <span>© {year} {COMPANY.name}. All rights reserved.</span>
           <nav className="flex gap-4">
             <Link to="/" className="hover:text-[var(--color-primary)] transition-colors">Home</Link>

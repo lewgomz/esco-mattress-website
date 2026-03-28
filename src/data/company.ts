@@ -27,7 +27,6 @@ export const PRODUCTS = [
   {
     id: 'innerspring',
     name: 'Traditional Innerspring',
-    icon: '🌀',
     summary: 'Classic coil support with excellent breathability and durability.',
     description:
       'Our Traditional Innerspring mattresses deliver reliable, time-tested support through a network of tempered steel coils. Ideal for sleepers who prefer a firmer, more responsive feel with outstanding airflow.',
@@ -35,7 +34,6 @@ export const PRODUCTS = [
   {
     id: 'pillow-top',
     name: 'Double Pillow Top',
-    icon: '☁️',
     summary: 'Luxurious cushioning on both sides for extended mattress life.',
     description:
       'Our signature Double Pillow Top features plush comfort layers sewn on both sides of the mattress. Flipping the mattress extends its life and keeps the feel consistent over the years.',
@@ -43,7 +41,6 @@ export const PRODUCTS = [
   {
     id: 'latex',
     name: 'Latex',
-    icon: '🌿',
     summary: 'Natural resilience with pressure relief and hypoallergenic properties.',
     description:
       'Latex mattresses provide a buoyant, responsive feel with natural cooling properties. Great for those with allergies, latex resists dust mites and mold while delivering consistent pressure relief.',
@@ -51,7 +48,6 @@ export const PRODUCTS = [
   {
     id: 'memory-foam',
     name: 'Memory Foam',
-    icon: '🛏️',
     summary: 'Contouring comfort that adapts to your body shape.',
     description:
       'Our Memory Foam mattresses use high-density viscoelastic foam to cradle your body, reduce motion transfer, and relieve pressure points. Perfect for couples and side sleepers.',
@@ -60,19 +56,19 @@ export const PRODUCTS = [
 
 export const VALUES = [
   {
-    icon: '🔄',
+    id: 'double-sided',
     title: 'Double-Sided Construction',
     description:
       'Every mattress we make is flippable. Double-sided design means twice the usable surface and a longer lifespan for your investment.',
   },
   {
-    icon: '🏭',
+    id: 'local',
     title: 'Manufactured Locally',
     description:
       'We build every mattress right here in Ontario, CA. Local manufacturing means tighter quality control and faster delivery to your door.',
   },
   {
-    icon: '✅',
+    id: 'quality',
     title: 'Quality You Can Trust',
     description:
       'From the coils to the cover, every component is selected for durability and comfort. We stand behind every mattress we ship.',
